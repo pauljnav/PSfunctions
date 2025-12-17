@@ -48,7 +48,7 @@ function Send-AIChat
     - Date: Nov 2025
 #>
     [CmdletBinding(DefaultParameterSetName = 'ModelName',
-                   HelpUri = 'http://www.microsoft.com/')]
+                   HelpUri = 'https://ai.google.dev/gemini-api/docs/')]
     [Alias("ChatGemini")]
 
     param(
