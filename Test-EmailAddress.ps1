@@ -18,6 +18,10 @@ function Test-EmailAddress {
     .EXAMPLE
         "invalid..email@" | Test-EmailAddress
         Returns $false for non-valid address.
+    .NOTES
+        Consider additional validation as the .NET MailAddress parser used is not perfect for validating all email addresses.
+        As an example, it will accept invalid addresses like user@domain..tld (double .)
+        The RFC allow for addresses that are technically valid but not commonly used.
     #>
     [CmdletBinding()]
     param(

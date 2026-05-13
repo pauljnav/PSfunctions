@@ -26,4 +26,4 @@ It defaults to the "2.5 Flash-Lite" Model, and it requires SecureString as input
 [Test-EmailAddress.ps1](/Test-EmailAddress.ps1)
 Validates an email address using the .NET MailAddress parser.  
 If successful, it returns the decorated object. If parsing fails, it returns $false.
-Most open source examples have used simple or complex regex patterns for mailaddress validation, all such regex has drawbacks.
+Consider additional validation as the .NET MailAddress parser used is not perfect for validating all email addresses.
