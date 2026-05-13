@@ -22,7 +22,8 @@ This function acts as a wrapper for the Gemini API /generateContent endpoint.
 It handles model selection either by common name (e.g., '2.5 Flash') or by raw model ID.
 It defaults to the "2.5 Flash-Lite" Model, and it requires SecureString as input for Gemini ApiKey.
 
-## Test-EmailAddress.p1
+## Test-EmailAddress.ps1
+[Test-EmailAddress.ps1](/Test-EmailAddress.ps1)
 Validates an email address using the .NET MailAddress parser.  
 If successful, it returns the decorated object. If parsing fails, it returns $false.
 Most open source examples have used simple or complex regex patterns for mailaddress validation, all such regex has drawbacks.
