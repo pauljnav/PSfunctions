@@ -1,5 +1,3 @@
-
-
 function Show-CertContents() {
     param(
         # specify cert display options
@@ -16,12 +14,11 @@ function Show-CertContents() {
         [Parameter()][Switch] $no_aux,
         [Parameter()][Switch] $no_extensions
     )
-    
-    
+
     # basiccertoptions is the default option collection
     [string]$certoptions = 'no_header,no_version,no_serial,no_signame,no_validity,no_pubkey,no_sigdump,no_aux,no_extensions'
-    
-    # all switcho options start with 'no_', is user selects from any switch parameter,
+
+    # all switch options start with 'no_'. If user selects from any switch parameter,
     # the function begins adding options to a blank certoptions string.
     if ($PSBoundParameters.Keys -match 'no_') {
         $certoptions = ''
@@ -43,7 +40,7 @@ function Show-CertContents() {
     }
     # TrimStart() after the switch block adjusts the string.
     $certoptions = $certoptions.TrimStart(',')
-        
+
     #$certoptions = "no_issuer,no_subject,no_header,no_version,no_serial,no_signame,no_validity,no_pubkey,no_sigdump,no_aux,no_extensions"
     #$certoptions = "no_header,no_version,no_serial,no_signame,no_validity,no_pubkey,no_sigdump,no_aux,no_extensions"
 
