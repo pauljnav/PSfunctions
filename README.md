@@ -27,3 +27,7 @@ It defaults to the "2.5 Flash-Lite" Model, and it requires SecureString as input
 Validates an email address using the .NET MailAddress parser.  
 If successful, it returns the decorated object. If parsing fails, it returns $false.
 Consider additional validation as the .NET MailAddress parser used is not perfect for validating all email addresses.
+
+## Get-MyBlog.ps1
+[Get-MyBlog.ps1](/Get-MyBlog.ps1)
+Get-MyBlog opens my blog https://pauljnav.github.io in the default browser when no blog -Name parameter is provided. When -Name is specified, the function resolves the url slug to the full URL from the blog feed via ArgumentCompleter() method.
