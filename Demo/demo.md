@@ -5,7 +5,7 @@ Hi everyone, my name is Paul Naughton. I'm from Galway in the West of Ireland, a
 
 It's been an incredible experience so far, my thanks to all speakers, sponsors, and organisers on an amazing job.
 
-One of my main goals coming here was to dive deeper into Pester testing. I attended Jakub Jares Tuesday session and asked a question about how to unit test custom **Argument Completers** using **Pester**. I've already had some offers of assistance from the sponsor community on that, so thank you sponsors!
+One of my main goals coming here was to dive deeper into Pester testing. I attended Jakub's Tuesday session and asked a question about how to unit test custom **Argument Completers** using **Pester**. I've already had some offers of assistance from the sponsor community on that, so thank you sponsors!
 
 I'm a fan of Argument Completers. Alongside Pester, they are one of the most powerful tools we have for tool-making and for building a great user experience.
 
