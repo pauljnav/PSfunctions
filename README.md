@@ -31,3 +31,11 @@ Consider additional validation as the .NET MailAddress parser used is not perfec
 ## Get-MyBlog.ps1
 [Get-MyBlog.ps1](/Get-MyBlog.ps1)
 Get-MyBlog opens my blog https://pauljnav.github.io in the default browser when no blog -Name parameter is provided. When -Name is specified, the function resolves the url slug to the full URL from the blog feed via ArgumentCompleter() method.
+
+## Get-MicrophoneAccess.ps1
+[Get-MicrophoneAccess.ps1](/Get-MicrophoneAccess.ps1)
+Gets the current Windows global microphone privacy setting and returns whether microphone access is enabled.
+
+## Set-MicrophoneAccess.ps1
+[Set-MicrophoneAccess.ps1](/Set-MicrophoneAccess.ps1)
+Enables or disables global microphone access using SystemSettingsAdminFlows.exe and supports ShouldProcess for -WhatIf and -Confirm.
