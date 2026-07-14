@@ -76,7 +76,7 @@
             throw "SystemSettingsAdminFlows.exe was not found."
         }
 
-        $Executable = $Command.Source
+        $Executable = $CommandInfo.Source
 
         $Value = if ($Enable) { 1 } else { 0 }
         $Action = if ($Enable) { 'Enable' } else { 'Disable' }
