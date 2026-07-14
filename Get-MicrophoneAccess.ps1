@@ -42,6 +42,10 @@ Author: Paul Naughton
 
     param()
 
+    if ($env:OS -notmatch '^Windows') {
+        throw "Get-MicrophoneAccess is supported only on Windows."
+    }
+
     $Path = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone'
 
     if (-not (Test-Path $Path)) {
@@ -51,7 +55,7 @@ Author: Paul Naughton
     $Value = (Get-ItemProperty -Path $Path -Name Value).Value
 
     [PSCustomObject]@{
-        Enabled      = ($Value -eq 'Allow')
+        Enabled       = ($Value -eq 'Allow')
         RegistryValue = $Value
         RegistryPath  = $Path
     }
